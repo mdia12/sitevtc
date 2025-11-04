@@ -40,6 +40,43 @@ document.addEventListener('DOMContentLoaded', function(){
     }, 300);
   });
   
+  // Menu hamburger mobile
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+  
+  if (mobileMenuToggle && mainNav) {
+    mobileMenuToggle.addEventListener('click', function() {
+      mobileMenuToggle.classList.toggle('active');
+      mainNav.classList.toggle('active');
+      
+      // Empêcher le scroll du body quand le menu est ouvert
+      if (mainNav.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    });
+    
+    // Fermer le menu quand on clique sur un lien
+    const navLinks = mainNav.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenuToggle.classList.remove('active');
+        mainNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      });
+    });
+    
+    // Fermer le menu sur redimensionnement de fenêtre
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 900) {
+        mobileMenuToggle.classList.remove('active');
+        mainNav.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  }
+  
   // Map and address handling
   let map = null;
   let pickupMarker = null;
