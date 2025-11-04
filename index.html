@@ -21,7 +21,15 @@
           </svg>
           <span>Instant Confort</span>
         </a>
-        <nav class="nav">
+        
+        <!-- Bouton hamburger pour mobile -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Ouvrir le menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        
+        <nav class="nav" id="main-nav">
           <a href="#services">Services</a>
           <a href="#how">Notre Excellence</a>
           <button id="theme-toggle" class="theme-toggle" aria-label="Basculer le mode sombre">
@@ -100,226 +108,173 @@
         <h2>Nos Services VTC Premium</h2>
         <div class="grid">
           <div class="card">
-            <h3>Transferts Aéroports</h3>
-            <p>Véhicules premium avec suivi de vol en temps réel. Chauffeur vous attend avec panneau nominatif.</p>
+            <h3>✈️ Transferts Aéroports</h3>
+            <p>Service privilégié vers tous les aéroports parisiens (CDG, Orly, Le Bourget). Suivi de vol inclus, accueil personnalisé.</p>
           </div>
           <div class="card">
-            <h3>Transport d'Affaires</h3>
-            <p>Ponctualité garantie pour vos rendez-vous. WiFi, prises électriques et espace de travail à bord.</p>
+            <h3>🏢 Transport d'Affaires</h3>
+            <p>Solutions de mobilité pour professionnels : rdv clients, réunions, conférences. Confidentialité et ponctualité garanties.</p>
           </div>
           <div class="card">
-            <h3>Événements & Mariages</h3>
-            <p>Véhicules d'exception et chauffeurs en livrée pour vos moments précieux.</p>
+            <h3>🎊 Événements Spéciaux</h3>
+            <p>Mariages, galas, soirées privées. Service sur-mesure avec véhicules d'exception et chauffeurs en livrée.</p>
           </div>
           <div class="card">
-            <h3>Mise à Disposition</h3>
-            <p>Chauffeur privé à votre service pour une demi-journée ou journée complète.</p>
-          </div>
-          <div class="card">
-            <h3>Courses Longue Distance</h3>
-            <p>Voyages inter-villes dans le confort avec véhicules haut de gamme et chauffeurs expérimentés.</p>
-          </div>
-          <div class="card">
-            <h3>Service Conciergerie</h3>
-            <p>Organisation complète de vos déplacements avec suivi personnalisé et assistance 24h/24.</p>
+            <h3>🌍 Longue Distance</h3>
+            <p>Voyages inter-villes et internationaux. Confort maximal pour vos déplacements longue durée avec pauses personnalisées.</p>
           </div>
         </div>
       </section>
 
-      <!-- Paris Section -->
+      <!-- Section Paris -->
       <section class="paris-section">
         <div class="container">
-          <h2>Instant Confort à Paris</h2>
-          <p class="section-subtitle">Notre service premium vous accompagne dans tous vos déplacements dans la capitale</p>
+          <h2>Excellence VTC à Paris</h2>
+          <p class="section-subtitle">Un service premium dans la plus belle ville du monde</p>
           
           <div class="paris-content">
             <div class="paris-image">
-              <img src="https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                   alt="Tour Eiffel Paris" class="monument-image" />
+              <img src="https://images.unsplash.com/photo-1543349689-9a4d426bee8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                   alt="Tour Eiffel Paris" 
+                   class="monument-image" />
               <div class="image-overlay">
-                <h3>Paris, Ville Lumière</h3>
-                <p>Nos chauffeurs connaissent tous les secrets de Paris</p>
+                <h3>Paris VTC Premium</h3>
+                <p>Découvrez Paris avec style et confort</p>
               </div>
             </div>
             
-            <div class="paris-features">
-              <div class="feature-highlight">
-                <h3>🗼 Monuments Emblématiques</h3>
-                <p>Tour Eiffel, Champs-Élysées, Louvre, Arc de Triomphe... Nos chauffeurs vous emmènent vers tous les lieux iconiques de Paris avec style et ponctualité.</p>
-              </div>
+            <div class="paris-info">
+              <h3>Votre chauffeur privé à Paris</h3>
+              <p>Instant Confort vous propose une expérience VTC d'exception dans la capitale. Nos chauffeurs, parfaitement formés à l'accueil de prestige, connaissent Paris comme leur poche.</p>
               
-              <div class="feature-highlight">
-                <h3>✈️ Aéroports Parisiens</h3>
-                <p>Charles de Gaulle, Orly, Le Bourget : transferts premium avec suivi de vol et chauffeur professionnel vous attendant à l'arrivée.</p>
-              </div>
-              
-              <div class="feature-highlight">
-                <h3>🏢 Quartiers d'Affaires</h3>
-                <p>La Défense, Opéra, République... Transport d'affaires discret et efficace vers tous les centres économiques parisiens.</p>
+              <div class="paris-features">
+                <div class="feature-item">
+                  <strong>🗼 Monuments emblématiques</strong>
+                  <p>Tours guidés privés vers Tour Eiffel, Louvre, Champs-Élysées</p>
+                </div>
+                
+                <div class="feature-item">
+                  <strong>🛍️ Shopping de luxe</strong>
+                  <p>Accompagnement pour vos achats avenue Montaigne, rue du Faubourg Saint-Honoré</p>
+                </div>
+                
+                <div class="feature-item">
+                  <strong>🍷 Gastronomie parisienne</strong>
+                  <p>Transport vers les meilleurs restaurants étoilés de la capitale</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Team Section -->
-      <section class="team-section">
-        <div class="container">
-          <h2>Notre Équipe de Chauffeurs Professionnels</h2>
-          <p class="section-subtitle">Une équipe diverse et expérimentée à votre service</p>
-          
-          <div class="team-grid">
-            <div class="driver-card">
-              <img src="https://images.unsplash.com/photo-1594736797933-d0ef4611c51e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
-                   alt="Chauffeure professionnelle VTC" class="driver-photo" />
-              <div class="driver-info">
-                <h3>Sophie Laurent</h3>
-                <p>8 ans d'expérience • Spécialiste événements</p>
-                <div class="driver-badges">
-                  <span class="badge">Trilingue</span>
-                  <span class="badge">5★</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="driver-card">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
-                   alt="Chauffeur professionnel VTC" class="driver-photo" />
-              <div class="driver-info">
-                <h3>Marc Dubois</h3>
-                <p>12 ans d'expérience • Expert aéroports</p>
-                <div class="driver-badges">
-                  <span class="badge">Aéroports</span>
-                  <span class="badge">5★</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="driver-card">
-              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
-                   alt="Chauffeure professionnelle VTC" class="driver-photo" />
-              <div class="driver-info">
-                <h3>Amina Benali</h3>
-                <p>6 ans d'expérience • Transport d'affaires</p>
-                <div class="driver-badges">
-                  <span class="badge">Business</span>
-                  <span class="badge">5★</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="driver-card">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
-                   alt="Chauffeur professionnel VTC" class="driver-photo" />
-              <div class="driver-info">
-                <h3>Pierre Martin</h3>
-                <p>15 ans d'expérience • Conciergerie</p>
-                <div class="driver-badges">
-                  <span class="badge">Luxe</span>
-                  <span class="badge">5★</span>
-                </div>
-              </div>
-            </div>
+      <!-- Section Équipe -->
+      <section id="how" class="container section">
+        <h2>Notre Équipe d'Excellence</h2>
+        <p class="section-subtitle">Des professionnels dédiés à votre confort</p>
+        
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                 alt="Chauffeur VTC professionnel" 
+                 class="team-photo" />
+            <h3>Alexandre Dubois</h3>
+            <p class="team-role">Chauffeur Senior • 8 ans d'expérience</p>
+            <p>Spécialiste des transferts aéroports et transport d'affaires. Maîtrise parfaite de l'anglais et de l'allemand.</p>
           </div>
           
-          <div class="team-stats">
-            <div class="stat-item">
-              <strong>50+ Chauffeurs</strong>
-              <p>Équipe mixte et diversifiée</p>
-            </div>
-            <div class="stat-item">
-              <strong>Formation Continue</strong>
-              <p>Mise à jour des compétences</p>
-            </div>
-            <div class="stat-item">
-              <strong>Sélection Rigoureuse</strong>
-              <p>Expérience et professionnalisme</p>
-            </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616c668f1bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                 alt="Chauffeuse VTC professionnelle" 
+                 class="team-photo" />
+            <h3>Sophia Martin</h3>
+            <p class="team-role">Chauffeuse Premium • 6 ans d'expérience</p>
+            <p>Experte en événements de prestige et accompagnement VIP. Formation en service de conciergerie.</p>
+          </div>
+          
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                 alt="Chauffeur VTC expérimenté" 
+                 class="team-photo" />
+            <h3>Jean-Pierre Leroy</h3>
+            <p class="team-role">Chauffeur Expert • 12 ans d'expérience</p>
+            <p>Ancien chauffeur de personnalités, spécialiste des longs trajets et du service protocolaire.</p>
+          </div>
+        </div>
+        
+        <div class="team-stats">
+          <div class="stat-item">
+            <strong>15+</strong>
+            <span>Chauffeurs certifiés</span>
+          </div>
+          <div class="stat-item">
+            <strong>24/7</strong>
+            <span>Service disponible</span>
+          </div>
+          <div class="stat-item">
+            <strong>98%</strong>
+            <span>Satisfaction client</span>
+          </div>
+          <div class="stat-item">
+            <strong>5★</strong>
+            <span>Note moyenne</span>
           </div>
         </div>
       </section>
 
-      <!-- Testimonials Section -->
+      <!-- Section Témoignages -->
       <section class="testimonials-section">
         <div class="container">
-          <h2>Ce que disent nos clients</h2>
-          <p class="section-subtitle">Plus de 5000 clients satisfaits nous font confiance</p>
+          <h2>Témoignages Clients</h2>
+          <p class="section-subtitle">L'excellence reconnue par nos clients</p>
           
           <div class="testimonials-grid">
             <div class="testimonial-card">
               <div class="testimonial-content">
-                <p>"Service exceptionnel ! Sophie, notre chauffeure, était ponctuelle et très professionnelle. Véhicule impeccable, trajet confortable. Je recommande vivement Instant Confort."</p>
+                <p>Service exceptionnel ! Chauffeur ponctuel, véhicule impeccable et trajet très confortable. Je recommande vivement Instant Confort pour tous vos déplacements VTC.</p>
               </div>
               <div class="testimonial-author">
                 <strong>Marie Dubois</strong>
-                <span>• Transfer aéroport CDG</span>
+                <span>• Directrice Marketing</span>
               </div>
               <div class="testimonial-rating">★★★★★</div>
             </div>
             
             <div class="testimonial-card">
               <div class="testimonial-content">
-                <p>"Chauffeur très discret et efficace pour mes rendez-vous d'affaires. Mercedes parfaitement entretenue, WiFi disponible. Exactement ce que j'attendais d'un service premium."</p>
+                <p>J'utilise leurs services pour mes déplacements d'affaires. Toujours à l'heure, chauffeurs professionnels et véhicules haut de gamme. Un service qui fait la différence.</p>
               </div>
               <div class="testimonial-author">
-                <strong>Thomas Bernard</strong>
-                <span>• Transport d'affaires</span>
+                <strong>Pierre Martinet</strong>
+                <span>• Chef d'entreprise</span>
               </div>
               <div class="testimonial-rating">★★★★★</div>
             </div>
             
             <div class="testimonial-card">
               <div class="testimonial-content">
-                <p>"Pour notre mariage, Pierre nous a fourni un service irréprochable. Présentation parfaite, véhicule décoré avec goût. Un moment magique grâce à Instant Confort !"</p>
+                <p>Transfert aéroport parfait ! Suivi de vol, accueil personnalisé et véhicule Mercedes très confortable. Je n'utilise plus que Instant Confort maintenant.</p>
               </div>
               <div class="testimonial-author">
-                <strong>Léa & Antoine</strong>
-                <span>• Mariage</span>
+                <strong>Carla Rossi</strong>
+                <span>• Consultante internationale</span>
               </div>
               <div class="testimonial-rating">★★★★★</div>
             </div>
           </div>
           
           <div class="testimonial-stats">
-            <div class="stat-highlight">
-              <strong>4.9/5</strong>
-              <p>Note moyenne</p>
+            <div class="stat-item">
+              <strong>2500+</strong>
+              <span>Clients satisfaits</span>
             </div>
-            <div class="stat-highlight">
-              <strong>5000+</strong>
-              <p>Courses réalisées</p>
+            <div class="stat-item">
+              <strong>15000+</strong>
+              <span>Courses réalisées</span>
             </div>
-            <div class="stat-highlight">
-              <strong>98%</strong>
-              <p>Clients satisfaits</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="how" class="container section">
-        <h2>Notre Excellence</h2>
-        <ol class="steps">
-          <li>Réservation simple en ligne ou par téléphone avec confirmation immédiate.</li>
-          <li>Véhicule premium et chauffeur professionnel en costume vous attendent ponctuellement.</li>
-          <li>Transport dans le confort et la discrétion avec service personnalisé.</li>
-          <li>Facturation transparente et paiement sécurisé (carte, virement, compte client).</li>
-        </ol>
-        
-        <div class="luxury-features">
-          <h3>Nos Garanties Premium</h3>
-          <div class="grid">
-            <div class="feature-item">
-              <strong>🚗 Flotte Premium</strong>
-              <p>Mercedes Classe E, BMW Série 5, véhicules de moins de 2 ans</p>
-            </div>
-            <div class="feature-item">
-              <strong>👔 Chauffeurs Professionnels</strong>
-              <p>Formation continue, présentation irréprochable, discrétion absolue</p>
-            </div>
-            <div class="feature-item">
-              <strong>⏰ Ponctualité Garantie</strong>
-              <p>Suivi GPS en temps réel, gestion proactive du trafic</p>
+            <div class="stat-item">
+              <strong>98.5%</strong>
+              <span>Ponctualité</span>
             </div>
           </div>
         </div>
@@ -328,24 +283,26 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year"></span> Instant Confort — Transport de Luxe avec Chauffeur</p>
-        <nav>
+        <p>&copy; <span id="year">2025</span> Instant Confort. Service VTC Premium.</p>
+        <div>
           <a href="#" onclick="showLegalModal('mentions')">Mentions légales</a>
-          <a href="#" onclick="showLegalModal('privacy')">Politique de confidentialité</a>
-          <a href="#" onclick="showLegalModal('terms')">Conditions de service</a>
-        </nav>
+          <a href="#" onclick="showLegalModal('privacy')">Confidentialité</a>
+          <a href="#" onclick="showLegalModal('terms')">CGS</a>
+          <a href="#" onclick="showLegalModal('cookies')">Cookies</a>
+        </div>
       </div>
     </footer>
 
     <!-- Cookie Banner -->
     <div id="cookie-banner" class="cookie-banner">
       <div class="cookie-content">
-        <p><strong>🍪 Gestion des cookies</strong></p>
-        <p>Nous utilisons des cookies pour améliorer votre expérience de navigation et analyser notre trafic. En continuant à utiliser ce site, vous acceptez notre utilisation des cookies.</p>
-        <div class="cookie-buttons">
-          <button onclick="acceptCookies()" class="btn-accept">Accepter tous</button>
-          <button onclick="declineCookies()" class="btn-decline">Refuser</button>
-          <button onclick="showLegalModal('cookies')" class="btn-settings">Paramètres</button>
+        <div>
+          <p><strong>🍪 Gestion des cookies</strong></p>
+          <p>Nous utilisons des cookies pour améliorer votre expérience et nos services VTC. Autorisez-vous l'utilisation de cookies ?</p>
+        </div>
+        <div class="cookie-actions">
+          <button onclick="declineCookies()" class="cookie-btn decline">Refuser</button>
+          <button onclick="acceptCookies()" class="cookie-btn accept">Accepter</button>
         </div>
       </div>
     </div>
@@ -354,12 +311,10 @@
     <div id="legal-modal" class="legal-modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 id="modal-title">Titre</h2>
-          <button onclick="closeLegalModal()" class="close-btn">&times;</button>
+          <h2 id="modal-title"></h2>
+          <button onclick="closeLegalModal()" class="modal-close">&times;</button>
         </div>
-        <div id="modal-body" class="modal-body">
-          <!-- Content will be populated by JavaScript -->
-        </div>
+        <div class="modal-body" id="modal-body"></div>
       </div>
     </div>
 
